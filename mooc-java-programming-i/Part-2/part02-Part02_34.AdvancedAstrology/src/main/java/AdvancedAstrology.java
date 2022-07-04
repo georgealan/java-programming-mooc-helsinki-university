@@ -3,10 +3,23 @@ public class AdvancedAstrology {
 
     public static void printStars(int number) {
         // part 1 of the exercise
+        int numberOfInteractions = 0;
+
+        while (numberOfInteractions < number) {
+            System.out.print("*");
+            numberOfInteractions++;
+        }
+        System.out.println("");
     }
 
     public static void printSpaces(int number) {
         // part 1 of the exercise
+        int numberOfInteractions = 0;
+
+        while (numberOfInteractions < number) {
+            System.out.print(" ");
+            numberOfInteractions++;
+        }
     }
 
     public static void printTriangle(int size) {
