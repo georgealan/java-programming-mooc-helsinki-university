@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class LastInList {
@@ -17,5 +18,14 @@ public class LastInList {
             list.add(input);
         }
 
+        returnLastName(list);
+
+    }
+
+    static void returnLastName(ArrayList<String> names) {
+        int lastIndex = names.size() -1;
+        String lastName = names.get(lastIndex);
+
+        System.out.println(lastName);
     }
 }

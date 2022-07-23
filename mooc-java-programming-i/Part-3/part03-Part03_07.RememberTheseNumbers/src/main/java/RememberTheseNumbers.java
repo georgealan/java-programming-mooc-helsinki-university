@@ -17,5 +17,13 @@ public class RememberTheseNumbers {
             numbers.add(luku);
         }
 
+        printAllNumbers(numbers);
+
+    }
+
+    static void printAllNumbers(ArrayList<Integer> numbers) {
+        for (Integer number : numbers) {
+            System.out.println(number);
+        }
     }
 }
