@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="part03-Part03_10.IndexOf" />
         <module name="Part03_10.IndexOf" />
       </profile>
     </annotationProcessing>

@@ -1,10 +1,5 @@
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.*;
 
 public class IndexOf {
 
@@ -31,6 +26,10 @@ public class IndexOf {
     }
 
     static void searchForNumbersInTheIndexes(ArrayList<Integer> numbers, int numberChosen) {
-
+        for (int i = 0; i < numbers.size(); i++) {
+           if (numbers.get(i) == numberChosen) {
+               System.out.println(numbers.get(i) + ": " + i);
+           }
+        }
     }
 }
