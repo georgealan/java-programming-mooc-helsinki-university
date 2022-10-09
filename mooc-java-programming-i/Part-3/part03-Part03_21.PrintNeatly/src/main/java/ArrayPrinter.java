@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class ArrayPrinter {
 
@@ -8,6 +10,11 @@ public class ArrayPrinter {
     }
 
     public static void printNeatly(int[] array) {
-        // Write some code in here
+        int lastIndex = array.length - 1;
+
+        for (int i = 0; i < lastIndex; i++) {
+            System.out.print(array[i] + ", ");
+        }
+        System.out.println(array[lastIndex]);
     }
 }
