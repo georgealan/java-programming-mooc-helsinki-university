@@ -5,6 +5,9 @@ public class MainProgram {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Statistics statisticAllNumbers = new Statistics();
+        Statistics statisticEvenNumbers = new Statistics();
+        Statistics statisticOddNumbers = new Statistics();
         // you can write test code here
         // however, remove all unnecessary code when doing the final parts of the exercise
 
@@ -12,5 +15,22 @@ public class MainProgram {
         // correct order in the main program. First the object that tracks the total
         // sum, secondly the object that tracks the sum of even numbers, 
         // and lastly the one that tracks the sum of odd numbers!
+        while (true) {
+            System.out.println("Enter numbers:");
+            int number = scanner.nextInt();
+            if (number == -1) { break; }
+
+            statisticAllNumbers.addNumber(number);
+
+            if(number % 2 == 0) {
+                statisticEvenNumbers.addNumber(number);
+            } else {
+                statisticOddNumbers.addNumber(number);
+            }
+        }
+
+        System.out.println("Sum: " + statisticAllNumbers.sum());
+        System.out.println("Sum of even numbers: " + statisticEvenNumbers.sum());
+        System.out.println("Sum of odd numbers: " + statisticOddNumbers.sum());
     }
 }
