@@ -1,4 +1,3 @@
-
 import java.nio.file.Paths;
 import java.util.Scanner;
 
@@ -8,10 +7,11 @@ public class PrintingASpecifiedFile {
 
         System.out.println("Which file should have its contents printed?");
         String path = scanner.nextLine();
+        System.out.println(path);
 
         try (Scanner file = new Scanner(Paths.get(path))) {
             while (file.hasNextLine()) {
-                String row = scanner.nextLine();
+                String row = file.nextLine();
                 System.out.println(row);
             }
         } catch (Exception e) {
